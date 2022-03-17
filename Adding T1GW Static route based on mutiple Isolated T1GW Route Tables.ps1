@@ -1,7 +1,7 @@
 # PowerShell Script to Add /32 static host route(s) on AVS Connected Tier1GW based on MON enabled VM /32 static routes added by HCX on Multiple AVS Isolated Tier1GWs. This is an infinite loop but can be stopped by pressing Ctrl+C Key.
 
 # Defining user name and password for AVS SDDC based NSX-T Manager but this can be changed to receive as a user input
-$nsxpassword = ConvertTo-SecureString "FILL IN YOUR PASSWORD" -AsPlainText -Force
+$nsxpassword = ConvertTo-SecureString "FILL IN YOUR NSX Manager PASSWORD" -AsPlainText -Force
 $nsxcred = New-Object System.Management.Automation.PSCredential ("admin", $nsxpassword)
 
 # Function to get all static routes from the user supplied T1GW
