@@ -8,3 +8,5 @@ This is a AVS NSX-T FW NVA test lab topology used to validate this script.
 
 ![image](https://user-images.githubusercontent.com/101758347/224368420-fea23614-8ea9-49d8-bbfc-1501941099d1.png)
 
+# Scope
+The purpose of this script is to Add /32 static host route(s) on AVS NSX-T "Connected Tier1-GW" based on MON enabled VM /32 static routes added by HCX on Multiple AVS NSX-T "Isolated Tier1-GWs". Route additions on AVS NSX-T "Isolated Tier1-GWs", FW NVA (northbound and southbound routing) are not covered in this script.
