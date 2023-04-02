@@ -6,7 +6,7 @@ Customers can bring in their own NVA appliance like FW NVA to AVS NSX-T to perfo
 # Architecture
 This is a AVS NSX-T FW NVA test lab topology used to validate this script.
 
-![image](https://user-images.githubusercontent.com/101758347/224371895-98cb1760-0fa0-4bb5-8a0b-707339730a77.png)
+![image](https://user-images.githubusercontent.com/101758347/229383443-f9a7a466-ecda-4430-bbdc-2198346a0497.png)
 
 
 # Scope
