@@ -88,6 +88,9 @@ function PostT1GWStaticRoutes {
 
 # <<<<<<<<<<<<<<   Main code starts here  >>>>>>>>>>>>>
 
+Write-host("PowerShell Script to Add /32 static host route(s) on AVS Connected Tier1GW based on MON enabled VM /32 static routes added by HCX on Multiple AVS Isolated Tier1GWs. 
+This is an infinite loop but can be stopped by pressing Ctrl+C Key:") -ForegroundColor DarkMagenta
+
 # Defining AVS NSX-T URL, user name and password and other User inputs to probe static routes and push the same onto connected T1GW - comment/uncomment as needed
 
 #$nsxurl = [string] (Read-Host -Prompt "Enter your AVS SDDC NSX-T Manager IP Address:")
@@ -102,7 +105,7 @@ function PostT1GWStaticRoutes {
 
 do 
 {
-  Write-Host ("This is an infinite loop probing MON /32 routes at 10 seconds interval, press CTRL+C if you want to exit from this script:") -ForegroundColor DarkRed
+  Write-Host ("This is an infinite loop probing MON /32 routes at 10 seconds interval and you can press CTRL+C at any time to exit from the loop:") -ForegroundColor DarkRed
  
   ForEach ($IsolatedT1GW in $IsolatedT1GWs)  # Iterate over multiple Isolated T1GWs based on user input 
   {
